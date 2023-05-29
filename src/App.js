@@ -8,6 +8,7 @@ import Home from "./routes/Home";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Menu from "./routes/Menu";
+import Product from "./routes/Product";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="menu" element={<Menu />} />
+        <Route path="/:productId" element={<Product />} />
       </Routes>
       <Footer />
     </>

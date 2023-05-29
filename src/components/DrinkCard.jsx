@@ -2,6 +2,7 @@ import React from "react";
 
 function DrinkCard({ name, description, image, price }) {
   const imagePath = `/assets/${image}`;
+
   return (
     <div className="card">
       <img src={imagePath} alt="empty" className="card-img" />
