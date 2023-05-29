@@ -1,0 +1,108 @@
+body {
+  background-color: #393053;
+}
+
+.navbar-container {
+  display: flex;
+  background-color: #443c68;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-container {
+  position: flex;
+  position: absolute;
+  bottom: 0;
+  background-color: #443c68;
+  width: 100%;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.text-container {
+  color: white;
+  font-size: 35px;
+}
+
+.home-container {
+  display: flex;
+}
+
+.intro {
+  font-weight: bold;
+}
+
+.text-left {
+  flex: 1;
+  padding: 20px;
+  font-family: "Josefin Sans";
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.img-right {
+  flex: 1;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+
+.btn-meny {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Jolly Lodger", cursive;
+  font-size: 25px;
+  background-color: #443c68;
+  border: #443c68;
+  border-radius: 30px;
+}
+
+img {
+  padding: 10px;
+  height: 250px;
+  width: 300px;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.title-name {
+  color: white;
+  font-size: 45px;
+  font-family: "Jolly Lodger", cursive;
+}
+
+.cart-icon {
+  color: white;
+  height: 65px;
+  width: 64px;
+}
+
+.instagram-icon {
+  color: #fa0196;
+  height: 56px;
+}
+
+.instagram-icon:hover {
+  color: white;
+}
+
+.twitter-icon {
+  color: #2400fe;
+  height: 56px;
+}
+
+.twitter-icon:hover {
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}

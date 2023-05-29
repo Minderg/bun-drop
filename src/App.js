@@ -1,10 +1,18 @@
 import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import Home from "./routes/Home";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div>
-      <img src="/assets/images/burger-2.png" />
-    </div>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+      <Footer />
+    </>
   );
 }
 
