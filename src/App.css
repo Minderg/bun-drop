@@ -7,14 +7,13 @@ body {
   background-color: #443c68;
   align-items: center;
   justify-content: space-between;
+  height: 90px;
 }
 
 .footer-container {
-  position: flex;
-  position: absolute;
-  bottom: 0;
   background-color: #443c68;
   width: 100%;
+  height: 90px;
 }
 
 .flex-container {
@@ -29,10 +28,6 @@ body {
 
 .home-container {
   display: flex;
-}
-
-.intro {
-  font-weight: bold;
 }
 
 .text-left {
@@ -51,16 +46,25 @@ body {
   text-align: center;
 }
 
-.btn-meny {
+.btn-menu {
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   font-family: "Jolly Lodger", cursive;
   font-size: 25px;
-  background-color: #443c68;
   border: #443c68;
   border-radius: 30px;
+  font-weight: bold;
+  fill: black;
+  background-color: transparent;
+}
+
+.btn-menu:hover {
+  background-color: #443c68;
+  border-radius: 30px;
+  font-weight: bold;
+  fill: black;
 }
 
 img {
@@ -81,8 +85,6 @@ img {
 
 .cart-icon {
   color: white;
-  height: 65px;
-  width: 64px;
 }
 
 .instagram-icon {
@@ -101,6 +103,47 @@ img {
 
 .twitter-icon:hover {
   color: white;
+}
+
+.burger-item {
+  border: 1px solid white;
+  padding: 1px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.items-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  gap: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.eatable {
+  display: flex;
+  justify-content: center;
+  font-family: "Jolly Lodger", cursive, sans-serif;
+  stroke: white;
+  fill: white 100%;
+}
+
+.sides {
+  display: flex;
+  justify-content: center;
+  font-family: "Jolly Lodger", cursive, sans-serif;
+  stroke: white;
+  fill: white 100%;
+}
+
+.drinks {
+  display: flex;
+  justify-content: center;
+  font-family: "Jolly Lodger", cursive, sans-serif;
+  stroke: white;
+  fill: white 100%;
 }
 
 ul {

@@ -5,21 +5,21 @@
       "name": "Classic Burger",
       "description": "A juicy beef patty topped with lettuce, tomato, onion, and pickles on a sesame seed bun.",
       "price": 8.99,
-      "image": "/images/burger-1.png"
+      "image": "burger-1.png"
     },
     {
       "id": 2,
       "name": "Cheeseburger",
       "description": "The classic burger with an added slice of cheddar cheese for extra flavor.",
       "price": 6.99,
-      "image": "/images/burger-9.png"
+      "image": "burger-9.png"
     },
     {
       "id": 3,
       "name": "Bacon Burger",
       "description": "A delicious burger topped with crispy bacon, lettuce, tomato, and mayo.",
       "price": 10.99,
-      "image": "/images/burger-8.png"
+      "image": "burger-8.png"
     },
     {
       "id": 4,
