@@ -14,7 +14,13 @@ function BurgerList() {
   return (
     <div className="items-container">
       {burgers.map((burger) => (
-        <BurgerCard key={burger.id} image={burger.image} />
+        <BurgerCard
+          key={burger.id}
+          image={burger.image}
+          name={burger.name}
+          price={burger.price}
+          description={burger.description}
+        />
       ))}
     </div>
   );

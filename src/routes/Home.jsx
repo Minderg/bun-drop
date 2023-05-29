@@ -17,7 +17,13 @@ function Home() {
         </p>
       </div>
       <div className="img-right">
-        <img src="/assets/logo-color.png" alt="BurgerDrone Logo" />
+        <span>
+          <img
+            className="img-home"
+            src="/assets/logo-color.png"
+            alt="BurgerDrone Logo"
+          />
+        </span>
         <Link to="/menu">
           <button className="btn-menu">To the Meny</button>
         </Link>

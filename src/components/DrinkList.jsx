@@ -13,7 +13,13 @@ function DrinkList() {
   return (
     <div className="items-container">
       {drinks.map((drink) => (
-        <DrinkCard key={drink.id} image={drink.image} />
+        <DrinkCard
+          key={drink.id}
+          image={drink.image}
+          name={drink.name}
+          price={drink.price}
+          description={drink.description}
+        />
       ))}
     </div>
   );

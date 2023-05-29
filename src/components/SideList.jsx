@@ -13,7 +13,13 @@ function SideList() {
   return (
     <div className="items-container">
       {sides.map((side) => (
-        <SideCard key={side.id} image={side.image} />
+        <SideCard
+          key={side.id}
+          image={side.image}
+          name={side.name}
+          price={side.price}
+          description={side.description}
+        />
       ))}
     </div>
   );

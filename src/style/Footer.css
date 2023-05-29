@@ -1,0 +1,10 @@
+.footer-container {
+  background-color: #443c68;
+  width: 100%;
+  height: 90px;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+}
