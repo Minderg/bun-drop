@@ -78,6 +78,20 @@
       "description": "Crispy sweet potato fries seasoned with salt, pepper and chili.",
       "price": 3.99,
       "image": "fries-2.png"
+    },
+    {
+      "id": 3,
+      "name": "Chili Cheese",
+      "description": "Crispy & Creamy Chili Cheese",
+      "price": 2.99,
+      "image": "chiili-cheese.png"
+    },
+    {
+      "id": 4,
+      "name": "Hot Wings",
+      "description": "Crispy & Spicy Hot Wings",
+      "price": 3.99,
+      "image": "hot-wings.png"
     }
   ],
   "drinks": [

@@ -9,7 +9,7 @@ function SideCard({ name, description, image, price }) {
         <h1 className="product-name">{name}</h1>
         <h3 className="product-description">{description}</h3>
         <p className="product-price">${price}</p>
-        <button className="btn-tocart">Add to cart</button>
+        <button className="btn-addtocart">Add to cart</button>
       </div>
     </div>
   );

@@ -4,13 +4,12 @@
 
 body {
   width: 100%;
-  background-color: #393053;
+  background-color: #f2f7a1;
 }
 
 img {
   padding: 10px;
-  height: 250px;
-  width: 300px;
+  border-radius: 15px;
 }
 
 .card {
@@ -19,11 +18,12 @@ img {
   display: flex;
   justify-content: center;
   position: relative;
+  font-family: "Jolly Lodger", cursive;
 }
 
 .card-img {
-  width: 90%;
-  height: 90%;
+  width: 80%;
+  height: 80%;
   object-fit: cover;
 }
 
@@ -41,6 +41,7 @@ img {
   flex-direction: column;
   justify-content: center;
   transition: 2s;
+  align-items: center;
 }
 
 .card:hover .card-body {
@@ -58,15 +59,21 @@ img {
   font-weight: 300;
 }
 
-.btn-tocart {
+.btn-addtocart {
   color: #1f3d47;
-  background-color: #8fabba;
+  background-color: #f2f7a1;
   border-radius: 5px;
   text-transform: capitalize;
   border: none;
   outline: none;
   cursor: pointer;
   width: 120px;
+  font-family: "Garamond", "Times New Roman", serif;
+}
+
+.btn-addtocart:hover {
+  background-color: #1f3d47;
+  color: #f2f7a1;
 }
 
 .img-card {
@@ -81,7 +88,6 @@ img {
 
 .instagram-icon {
   color: #fa0196;
-  height: 56px;
 }
 
 .instagram-icon:hover {
@@ -90,7 +96,6 @@ img {
 
 .twitter-icon {
   color: #2400fe;
-  height: 56px;
 }
 
 .twitter-icon:hover {

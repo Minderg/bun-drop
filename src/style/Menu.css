@@ -1,23 +1,26 @@
 .eatable {
   display: flex;
-  justify-content: center;
-  font-family: "Jolly Lodger", cursive, sans-serif;
+  justify-content: start;
+  margin: 15px;
+  font-family: "Garamond", "Times New Roman", serif;
   stroke: white;
   fill: white 100%;
 }
 
 .sides {
   display: flex;
-  justify-content: center;
-  font-family: "Jolly Lodger", cursive, sans-serif;
+  justify-content: start;
+  margin: 15px;
+  font-family: "Garamond", "Times New Roman", serif;
   stroke: white;
   fill: white 100%;
 }
 
 .drinks {
   display: flex;
-  justify-content: center;
-  font-family: "Jolly Lodger", cursive, sans-serif;
+  justify-content: start;
+  margin: 15px;
+  font-family: "Garamond", "Times New Roman", serif;
   stroke: white;
   fill: white 100%;
 }
