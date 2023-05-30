@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { AiOutlineHome } from "react-icons/ai";
+import Hamburger from "hamburger-react";
 
 function Navbar() {
   return (
@@ -9,8 +10,7 @@ function Navbar() {
       <Link to="/">
         <h1 className="title-name">Bun Drop</h1>
       </Link>
-
-      <div className="flex-container">
+      <div>
         <Link to="/menu">
           <AiOutlineHome size={40} className="home-icon" />
         </Link>

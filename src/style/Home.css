@@ -6,9 +6,13 @@
   flex: 1;
   padding: 20px;
   font-family: "Garamond", "Times New Roman", serif;
-  color: black;
+  color: salmon;
   font-size: 25px;
   font-weight: bold;
+  border: 5px solid #443c68;
+  border-radius: 1%;
+  margin: 10px;
+  background-color: white;
 }
 
 .img-right {
@@ -21,15 +25,17 @@
 .btn-menu {
   position: absolute;
   bottom: 0;
-  left: 50%;
+  left: 37%;
   transform: translateX(-50%);
+  transform: translateY(-150%);
   font-family: "Garamond", "Times New Roman", serif;
   font-size: 25px;
   border: #443c68;
   border-radius: 30px;
   font-weight: bold;
-  fill: black;
   background-color: transparent;
+  color: black;
+  font-size: 40px;
 }
 
 .btn-menu:hover {
@@ -37,17 +43,34 @@
   color: #f2f7a1;
   border-radius: 30px;
   font-weight: bold;
-  fill: black;
-}
-
-.title-name {
-  color: white;
-  font-size: 45px;
-  font-family: "Garamond", "Times New Roman", serif;
 }
 
 .img-home {
   padding: 10px;
   height: 250px;
   width: 300px;
+}
+
+.instagram-icon-home {
+  color: #fa0196;
+}
+
+.instagram-icon-home:hover {
+  color: #1f3d47;
+}
+
+.twitter-icon-home {
+  color: #2400fe;
+}
+
+.twitter-icon-home:hover {
+  color: #1f3d47;
+}
+
+.linkedin-icon-home {
+  color: blue;
+}
+
+.linkedin-icon-home:hover {
+  color: #1f3d47;
 }

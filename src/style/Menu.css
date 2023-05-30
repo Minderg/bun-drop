@@ -1,6 +1,6 @@
 .eatable {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   margin: 15px;
   font-family: "Garamond", "Times New Roman", serif;
   stroke: white;
@@ -9,7 +9,7 @@
 
 .sides {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   margin: 15px;
   font-family: "Garamond", "Times New Roman", serif;
   stroke: white;
@@ -18,7 +18,7 @@
 
 .drinks {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   margin: 15px;
   font-family: "Garamond", "Times New Roman", serif;
   stroke: white;

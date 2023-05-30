@@ -13,3 +13,10 @@
 .home-icon {
   color: white;
 }
+
+.title-name {
+  color: white;
+  font-size: 45px;
+  font-weight: bold;
+  font-family: "Jolly Lodger";
+}

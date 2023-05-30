@@ -1,5 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { AiOutlineInstagram } from "react-icons/ai";
+import { AiOutlineTwitter } from "react-icons/ai";
+import { AiOutlineLinkedin } from "react-icons/ai";
 
 function Home() {
   return (
@@ -15,6 +18,15 @@ function Home() {
           burgers are just a few clicks away, delivered directly to your
           doorstep by our fleet of cutting-edge drones.
         </p>
+        <Link to={"https://www.instagram.com/gabrielminder/"}>
+          <AiOutlineInstagram size={40} className="instagram-icon-home" />
+        </Link>
+        <Link to={"https://twitter.com/MinderGabriel"}>
+          <AiOutlineTwitter size={40} className="twitter-icon-home" />
+        </Link>
+        <Link to={"https://www.linkedin.com/in/gabriel-minder/"}>
+          <AiOutlineLinkedin size={40} className="linkedin-icon-home" />
+        </Link>
       </div>
       <div className="img-right">
         <span>

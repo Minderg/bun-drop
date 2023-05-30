@@ -4,7 +4,7 @@
 
 body {
   width: 100%;
-  background-color: #f2f7a1;
+  background-image: url("/public/assets/backburger3.png");
 }
 
 img {
@@ -19,13 +19,15 @@ img {
   justify-content: center;
   position: relative;
   font-family: "Jolly Lodger", cursive;
+  padding: 15px;
 }
 
 .card-img {
-  width: 80%;
-  height: 80%;
+  width: 90%;
+  height: 90%;
   object-fit: cover;
   border: 1px solid #1f3d47;
+  background-color: antiquewhite;
 }
 
 .card-body {
@@ -37,11 +39,11 @@ img {
   background: #1f3d4738;
   backdrop-filter: blur(5px);
   color: white;
-  padding: 20px;
+  padding: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transition: 2s;
+  transition: 3s;
   align-items: center;
 }
 
@@ -51,7 +53,7 @@ img {
 
 .product-name {
   text-transform: uppercase;
-  font-weight: 200;
+  font-weight: 100;
 }
 
 .product-description {
@@ -101,6 +103,14 @@ img {
 }
 
 .twitter-icon:hover {
+  color: white;
+}
+
+.linkedin-icon {
+  color: blue;
+}
+
+.linkedin-icon:hover {
   color: white;
 }
 

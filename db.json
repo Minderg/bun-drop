@@ -1,8 +1,9 @@
 {
-  "burgers": [
+  "menu": [
     {
       "id": 1,
       "name": "Classic Burger",
+      "category": "burgers",
       "description": "A juicy beef patty topped with lettuce, tomato, onion, and pickles on a sesame seed bun.",
       "price": 8.99,
       "image": "burger-1.png"
@@ -10,6 +11,7 @@
     {
       "id": 2,
       "name": "Cheeseburger",
+      "category": "burgers",
       "description": "The classic burger with an added slice of cheddar cheese for extra flavor.",
       "price": 6.99,
       "image": "burger-9.png"
@@ -17,6 +19,7 @@
     {
       "id": 3,
       "name": "Bacon Burger",
+      "category": "burgers",
       "description": "A delicious burger topped with crispy bacon, lettuce, tomato, and mayo.",
       "price": 10.99,
       "image": "burger-8.png"
@@ -24,6 +27,7 @@
     {
       "id": 4,
       "name": "Mushroom Swiss Burger",
+      "category": "burgers",
       "description": "A savory burger topped with sautéed mushrooms and melted Swiss cheese.",
       "price": 11.99,
       "image": "burger-2.png"
@@ -31,6 +35,7 @@
     {
       "id": 5,
       "name": "BBQ Burger",
+      "category": "burgers",
       "description": "A smoky barbecue burger with tangy barbecue sauce, crispy onion rings, and pickles.",
       "price": 14.99,
       "image": "burger-4.png"
@@ -38,6 +43,7 @@
     {
       "id": 6,
       "name": "Spicy Jalapeno Burger",
+      "category": "burgers",
       "description": "A fiery burger topped with sliced jalapenos, pepper jack cheese, and chipotle mayo.",
       "price": 9.99,
       "image": "burger-3.png"
@@ -45,6 +51,7 @@
     {
       "id": 7,
       "name": "Avocado Turkey Burger",
+      "category": "burgers",
       "description": "A healthier option with a turkey patty, sliced avocado, lettuce, and tomato.",
       "price": 16.99,
       "image": "burger-5.png"
@@ -52,6 +59,7 @@
     {
       "id": 8,
       "name": "Veggie Burger Joke",
+      "category": "burgers",
       "description": "A vegetarian delight with a plant-based patty, lettuce, tomato, and special sauce.(Not really a veggi burger)",
       "price": 18.99,
       "image": "burger-6.png"
@@ -59,80 +67,87 @@
     {
       "id": 9,
       "name": "Double Bacon Cheeseburger",
+      "category": "burgers",
       "description": "A hearty burger with two beef patties, double bacon, and melted cheese.",
       "price": 20.99,
       "image": "burger-7.png"
-    }
-  ],
-  "sides": [
+    },
     {
-      "id": 1,
+      "id": 10,
       "name": "French Fries",
+      "category": "sides",
       "description": "Crispy golden fries seasoned with salt and pepper.",
       "price": 2.99,
       "image": "fries-1.png"
     },
     {
-      "id": 2,
+      "id": 11,
       "name": "Sweet Potato Fries",
+      "category": "sides",
       "description": "Crispy sweet potato fries seasoned with salt, pepper and chili.",
       "price": 3.99,
       "image": "fries-2.png"
     },
     {
-      "id": 3,
+      "id": 12,
       "name": "Chili Cheese",
+      "category": "sides",
       "description": "Crispy & Creamy Chili Cheese",
       "price": 2.99,
       "image": "chiili-cheese.png"
     },
     {
-      "id": 4,
+      "id": 13,
       "name": "Hot Wings",
+      "category": "sides",
       "description": "Crispy & Spicy Hot Wings",
       "price": 3.99,
       "image": "hot-wings.png"
-    }
-  ],
-  "drinks": [
+    },
     {
-      "id": 1,
+      "id": 14,
       "name": "Coco Milkshake",
+      "category": "drinks",
       "description": "A creamy milkshake made with chocolate",
       "price": 4.99,
       "image": "milkshake-1.png"
     },
     {
-      "id": 2,
+      "id": 15,
       "name": "Berry Milkshake",
+      "category": "drinks",
       "description": "A creamy milkshake made with strawberry ice cream.",
       "price": 4.99,
       "image": "milkshake-2.png"
     },
     {
-      "id": 3,
+      "id": 16,
       "name": "Frida",
+      "category": "drinks",
       "description": "Pale Ale Beer named after Frida",
       "price": 5.99,
       "image": "soda-1.png"
     },
     {
-      "id": 4,
+      "id": 17,
       "name": "Olipop",
+      "category": "drinks",
       "description": "A healthy sparkling tonic",
       "price": 2.99,
       "image": "soda-2.png"
     },
     {
-      "id": 5,
+      "id": 18,
       "name": "Tropical Water",
+      "category": "drinks",
       "description": "A healthy sparkling water from China best waterfalls",
       "price": 1.99,
       "image": "soda-3.png"
     },
     {
-      "id": 6,
+      "id": 19,
       "name": "Coco Water",
+      "category": "drinks",
       "description": "Straight from the coconut",
       "price": 6.99,
       "image": "soda-4.png"
