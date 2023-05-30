@@ -7,7 +7,7 @@ function MenuCard({
   image,
   price,
   category,
-  addToCart,
+  addToLocalStorage,
 }) {
   const imagePath = `/assets/${image}`;
 
@@ -22,7 +22,7 @@ function MenuCard({
         <button
           className="btn-addtocart"
           onClick={() => {
-            addToCart(id);
+            addToLocalStorage(id);
           }}
         >
           Add to cart

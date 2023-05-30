@@ -6,7 +6,6 @@ import "../src/style/Menu.css";
 import { Routes, Route } from "react-router-dom";
 import Home from "./routes/Home";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 import Menu from "./routes/Menu";
 import Cart from "./routes/Cart";
 

@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap");
+
 .eatable {
   display: flex;
   justify-content: flex-start;
   margin: 15px;
-  font-family: "Garamond", "Times New Roman", serif;
+  font-family: "Kanit", sans-serif;
   stroke: white;
   fill: white 100%;
 }
@@ -11,7 +13,7 @@
   display: flex;
   justify-content: flex-start;
   margin: 15px;
-  font-family: "Garamond", "Times New Roman", serif;
+  font-family: "Kanit", sans-serif;
   stroke: white;
   fill: white 100%;
 }
@@ -20,7 +22,7 @@
   display: flex;
   justify-content: flex-start;
   margin: 15px;
-  font-family: "Garamond", "Times New Roman", serif;
+  font-family: "Kanit", sans-serif;
   stroke: white;
   fill: white 100%;
 }

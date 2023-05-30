@@ -18,7 +18,6 @@ img {
   display: flex;
   justify-content: center;
   position: relative;
-  font-family: "Jolly Lodger", cursive;
   padding: 15px;
 }
 
@@ -45,6 +44,7 @@ img {
   justify-content: center;
   transition: 0.8s ease-in;
   align-items: center;
+  font-family: "Kanit", sans-serif;
 }
 
 .card:hover .card-body {
@@ -71,7 +71,7 @@ img {
   outline: none;
   cursor: pointer;
   width: 120px;
-  font-family: "Garamond", "Times New Roman", serif;
+  font-family: "Kanit", sans-serif;
 }
 
 .btn-addtocart:hover {

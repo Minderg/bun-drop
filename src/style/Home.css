@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Aoboshi+One&display=swap");
 .home-container {
   display: flex;
 }
@@ -5,7 +6,7 @@
 .text-left {
   flex: 1;
   padding: 20px;
-  font-family: "Garamond", "Times New Roman", serif;
+  font-family: "Kanit", sans-serif;
   color: salmon;
   font-size: 25px;
   font-weight: bold;
@@ -28,13 +29,13 @@
   left: 37%;
   transform: translateX(-50%);
   transform: translateY(-150%);
-  font-family: "Garamond", "Times New Roman", serif;
+  font-family: "Kanit", sans-serif;
   font-size: 25px;
   border: #443c68;
   border-radius: 30px;
   font-weight: bold;
   background-color: transparent;
-  color: black;
+  color: #79addc;
   font-size: 40px;
 }
 

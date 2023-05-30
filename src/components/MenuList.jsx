@@ -16,21 +16,19 @@ function MenuList() {
       .catch((err) => console.log(err));
   }, []);
 
-  function addToCart(id) {
+  function addToLocalStorage(id) {
     // letar efter produkten med id:t som skickas in i funktionen
     const itemMenu = menu.find((item) => item.id === id);
 
-    if (itemMenu) {
-      // skapar ett nytt objekt med alla props
-      let item = { name: itemMenu.name, price: itemMenu.price, quantity: 1 };
-      // letar efter cart i localstorage, om det inte finns så skapas en tom array
-      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    // skapar ett nytt objekt med alla props
+    let item = { name: itemMenu.name, price: itemMenu.price, quantity: 1 };
+    // letar efter cart i localstorage, om det inte finns så skapas en tom array
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-      // lägger till item i cart
-      cart.push(item);
-      // sparar cart i localstorage
-      localStorage.setItem("cart", JSON.stringify(cart));
-    }
+    // lägger till item i cart
+    cart.push(item);
+    // sparar cart i localstorage
+    localStorage.setItem("cart", JSON.stringify(cart));
   }
 
   return (
@@ -44,7 +42,7 @@ function MenuList() {
             description={item.description}
             image={item.image}
             price={item.price}
-            addToCart={addToCart}
+            addToLocalStorage={addToLocalStorage}
           />
         ))}
       </div>

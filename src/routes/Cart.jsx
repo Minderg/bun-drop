@@ -14,12 +14,12 @@ function Cart() {
 
   return (
     <div>
-      {cartItems.map((knas, index) => (
+      {cartItems.map((index) => (
         <div style={{ color: "white" }} key={index}>
-          <h2>{knas.name}</h2>
-          <p>{knas.price}</p>
-          <p>{knas.description}</p>
-          <p>{knas.quantity}</p>
+          <h2>{index.name}</h2>
+          <p>{index.price}</p>
+          <p>{index.description}</p>
+          <p>{index.quantity}</p>
         </div>
       ))}
       <div>
