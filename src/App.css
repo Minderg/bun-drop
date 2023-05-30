@@ -43,7 +43,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transition: 3s;
+  transition: 0.8s;
   align-items: center;
 }
 
