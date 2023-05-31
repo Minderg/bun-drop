@@ -35,12 +35,13 @@
   border-radius: 30px;
   font-weight: bold;
   background-color: transparent;
-  color: #79addc;
+  color: white;
+  background-color: #79addc;
   font-size: 40px;
 }
 
 .btn-menu:hover {
-  background-color: #1f3d47;
+  background-color: #79addc;
   color: #f2f7a1;
   border-radius: 30px;
   font-weight: bold;
