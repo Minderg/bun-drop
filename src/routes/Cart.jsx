@@ -34,6 +34,7 @@ function Cart() {
         if (quantity < 1) {
           quantity = 1;
         }
+
         let price = item.price;
         if (operator === "add" && item.quantity > 0) {
           price *= 1;
