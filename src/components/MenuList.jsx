@@ -20,21 +20,41 @@ function MenuList() {
     // letar efter produkten med id:t som skickas in i funktionen
     const itemMenu = menu.find((item) => item.id === id);
 
-    // skapar ett nytt objekt med alla props
-    let item = {
-      name: itemMenu.name,
-      price: itemMenu.price,
-      image: itemMenu.image,
-      description: itemMenu.description,
-      quantity: 1,
-    };
-    // letar efter cart i localstorage, om det inte finns så skapas en tom array
-    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    if (itemMenu) {
+      // skapar ett nytt objekt med alla props
+      let item = {
+        id: itemMenu.id,
+        name: itemMenu.name,
+        price: itemMenu.price,
+        image: itemMenu.image,
+        description: itemMenu.description,
+        quantity: 1,
+      };
+      // letar efter cart i localstorage, om det inte finns så skapas en tom array
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-    // lägger till item i cart
-    cart.push(item);
-    // sparar cart i localstorage
-    localStorage.setItem("cart", JSON.stringify(cart));
+      const index = cart.findIndex((item) => item.id === id);
+
+      // Kollar om produkten redan finns i carten och plusar på 1, annars så lägger den till den
+      if (index !== -1) {
+        cart[index].quantity++;
+      } else {
+        // lägger till item i cart
+        cart.push(item);
+      }
+
+      // Samt uppdaterar quantity i cart hela tiden
+      const updateCart = menu.map((item) => {
+        if (index.id === id) {
+          return { ...item, quantity: item.quantity + 1 };
+        }
+        return item;
+      });
+      setMenu(updateCart);
+
+      // sparar cart i localstorage
+      localStorage.setItem("cart", JSON.stringify(cart));
+    }
   }
 
   return (

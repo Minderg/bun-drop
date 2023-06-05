@@ -5,6 +5,7 @@ import "../src/style/Home.css";
 import "../src/style/Menu.css";
 import "../src/style/Cart.css";
 import "../src/style/CheckOut.css";
+import "../src/style/Summary.css";
 import { Routes, Route } from "react-router-dom";
 import Home from "./routes/Home";
 import Navbar from "./components/Navbar";

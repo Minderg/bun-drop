@@ -6,7 +6,8 @@
       "category": "burgers",
       "description": "A juicy beef patty topped with lettuce, tomato, onion, and pickles on a sesame seed bun.",
       "price": 8.99,
-      "image": "burger-1.png"
+      "image": "burger-1.png",
+      "totalprice":
     },
     {
       "id": 2,
@@ -14,7 +15,8 @@
       "category": "burgers",
       "description": "The classic burger with an added slice of cheddar cheese for extra flavor.",
       "price": 6.99,
-      "image": "burger-9.png"
+      "image": "burger-9.png",
+      "totalprice":
     },
     {
       "id": 3,
@@ -22,7 +24,8 @@
       "category": "burgers",
       "description": "A delicious burger topped with crispy bacon, lettuce, tomato, and mayo.",
       "price": 10.99,
-      "image": "burger-8.png"
+      "image": "burger-8.png",
+      "totalprice":
     },
     {
       "id": 4,
@@ -30,7 +33,8 @@
       "category": "burgers",
       "description": "A savory burger topped with sautéed mushrooms and melted Swiss cheese.",
       "price": 11.99,
-      "image": "burger-2.png"
+      "image": "burger-2.png",
+      "totalprice":
     },
     {
       "id": 5,
@@ -38,7 +42,8 @@
       "category": "burgers",
       "description": "A smoky barbecue burger with tangy barbecue sauce, crispy onion rings, and pickles.",
       "price": 14.99,
-      "image": "burger-4.png"
+      "image": "burger-4.png",
+      "totalprice":
     },
     {
       "id": 6,
@@ -46,7 +51,8 @@
       "category": "burgers",
       "description": "A fiery burger topped with sliced jalapenos, pepper jack cheese, and chipotle mayo.",
       "price": 9.99,
-      "image": "burger-3.png"
+      "image": "burger-3.png",
+      "totalprice":
     },
     {
       "id": 7,
@@ -54,7 +60,8 @@
       "category": "burgers",
       "description": "A healthier option with a turkey patty, sliced avocado, lettuce, and tomato.",
       "price": 16.99,
-      "image": "burger-5.png"
+      "image": "burger-5.png",
+      "totalprice":
     },
     {
       "id": 8,
@@ -62,7 +69,8 @@
       "category": "burgers",
       "description": "A vegetarian delight with a plant-based patty, lettuce, tomato, and special sauce.(Not really a veggi burger)",
       "price": 18.99,
-      "image": "burger-6.png"
+      "image": "burger-6.png",
+      "totalprice":
     },
     {
       "id": 9,
@@ -70,7 +78,8 @@
       "category": "burgers",
       "description": "A hearty burger with two beef patties, double bacon, and melted cheese.",
       "price": 20.99,
-      "image": "burger-7.png"
+      "image": "burger-7.png",
+      "totalprice":
     },
     {
       "id": 10,
@@ -78,7 +87,8 @@
       "category": "sides",
       "description": "Crispy golden fries seasoned with salt and pepper.",
       "price": 2.99,
-      "image": "fries-1.png"
+      "image": "fries-1.png",
+      "totalprice":
     },
     {
       "id": 11,
@@ -86,7 +96,8 @@
       "category": "sides",
       "description": "Crispy sweet potato fries seasoned with salt, pepper and chili.",
       "price": 3.99,
-      "image": "fries-2.png"
+      "image": "fries-2.png",
+      "totalprice":
     },
     {
       "id": 12,
@@ -94,7 +105,8 @@
       "category": "sides",
       "description": "Crispy & Creamy Chili Cheese",
       "price": 2.99,
-      "image": "chiili-cheese.png"
+      "image": "chiili-cheese.png",
+      "totalprice":
     },
     {
       "id": 13,
@@ -102,7 +114,8 @@
       "category": "sides",
       "description": "Crispy & Spicy Hot Wings",
       "price": 3.99,
-      "image": "hot-wings.png"
+      "image": "hot-wings.png",
+      "totalprice":
     },
     {
       "id": 14,
@@ -110,7 +123,8 @@
       "category": "drinks",
       "description": "A creamy milkshake made with chocolate",
       "price": 4.99,
-      "image": "milkshake-1.png"
+      "image": "milkshake-1.png",
+      "totalprice":
     },
     {
       "id": 15,
@@ -118,7 +132,8 @@
       "category": "drinks",
       "description": "A creamy milkshake made with strawberry ice cream.",
       "price": 4.99,
-      "image": "milkshake-2.png"
+      "image": "milkshake-2.png",
+      "totalprice":
     },
     {
       "id": 16,
@@ -126,7 +141,8 @@
       "category": "drinks",
       "description": "Pale Ale Beer named after Frida",
       "price": 5.99,
-      "image": "soda-1.png"
+      "image": "soda-1.png",
+      "totalprice":
     },
     {
       "id": 17,
@@ -134,7 +150,8 @@
       "category": "drinks",
       "description": "A healthy sparkling tonic",
       "price": 2.99,
-      "image": "soda-2.png"
+      "image": "soda-2.png",
+      "totalprice":
     },
     {
       "id": 18,
@@ -142,7 +159,8 @@
       "category": "drinks",
       "description": "A healthy sparkling water from China best waterfalls",
       "price": 1.99,
-      "image": "soda-3.png"
+      "image": "soda-3.png",
+      "totalprice":
     },
     {
       "id": 19,
@@ -150,7 +168,8 @@
       "category": "drinks",
       "description": "Straight from the coconut",
       "price": 6.99,
-      "image": "soda-4.png"
+      "image": "soda-4.png",
+      "totalprice":
     }
   ]
 }
