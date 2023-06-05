@@ -1,0 +1,122 @@
+.checkout-title {
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Kanit", sans-serif;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.firstname {
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-family: "Kanit", sans-serif;
+}
+
+.lastname {
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-family: "Kanit", sans-serif;
+}
+
+.email {
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-family: "Kanit", sans-serif;
+}
+
+.city {
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-family: "Kanit", sans-serif;
+}
+
+.address {
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-family: "Kanit", sans-serif;
+}
+
+.house-number {
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-family: "Kanit", sans-serif;
+}
+
+.swish {
+  height: 80px;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-family: "Kanit", sans-serif;
+}
+
+.credit-card {
+  height: 80px;
+  border-radius: 15px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-family: "Kanit", sans-serif;
+}
+
+.payment-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+}
+
+.pay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-pay-style {
+  font-family: "Kanit", sans-serif;
+  font-size: 30px;
+  border: #443c68;
+  border-radius: 30px;
+  font-weight: bold;
+  background-color: #79addc;
+}
+
+.btn-pay-style:hover {
+  background-color: #79addc;
+  color: #f2f7a1;
+  border-radius: 30px;
+}

@@ -21,7 +21,13 @@ function MenuList() {
     const itemMenu = menu.find((item) => item.id === id);
 
     // skapar ett nytt objekt med alla props
-    let item = { name: itemMenu.name, price: itemMenu.price, quantity: 1 };
+    let item = {
+      name: itemMenu.name,
+      price: itemMenu.price,
+      image: itemMenu.image,
+      description: itemMenu.description,
+      quantity: 1,
+    };
     // letar efter cart i localstorage, om det inte finns så skapas en tom array
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
 

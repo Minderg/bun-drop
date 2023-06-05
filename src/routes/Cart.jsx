@@ -8,23 +8,21 @@ function Cart() {
 
   useEffect(() => {
     const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
-
     setCartItems(cartItems);
   }, []);
 
   return (
-    <div>
-      {cartItems.map((index) => (
-        <div style={{ color: "white" }} key={index}>
-          <h2>{index.name}</h2>
-          <p>{index.price}</p>
-          <p>{index.description}</p>
-          <p>{index.quantity}</p>
+    <div className="cart-container">
+      {cartItems.map((item) => (
+        <div className="card-cart" key={item.id}>
+          <p>{item.name}</p>
+          <em>{item.description}</em>
+          <p>${item.price}</p>
         </div>
       ))}
-      <div>
-        <button>Checkout</button>
-      </div>
+      <Link to="/checkout">
+        <button className="btn-cart">Checkout</button>
+      </Link>
       <div className="footer-container">
         <ul className="flex-container justify-center">
           <li>
@@ -47,5 +45,4 @@ function Cart() {
     </div>
   );
 }
-
 export default Cart;

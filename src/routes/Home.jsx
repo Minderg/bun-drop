@@ -29,13 +29,13 @@ function Home() {
         </Link>
       </div>
       <div className="img-right">
-        <span>
+        {/* <span>
           <img
             className="img-home"
             src="/assets/logo-color.png"
             alt="BurgerDrone Logo"
           />
-        </span>
+        </span> */}
         <Link to="/menu">
           <button className="btn-menu">To the Meny</button>
         </Link>
