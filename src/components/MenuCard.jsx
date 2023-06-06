@@ -15,7 +15,7 @@ function MenuCard({
     <div className="card">
       <img src={imagePath} alt="empty" className="card-img" />
       <div className="card-body">
-        <h3 className="product-name">{name}</h3>
+        <h2 className="product-name">{name}</h2>
         <h2 className="product-description">{description}</h2>
         <p className="product-category">{category}</p>
         <p className="product-price">${price}</p>

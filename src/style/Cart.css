@@ -17,7 +17,8 @@
   height: 100px;
   font-weight: semi-bold;
   margin: 5px;
-  background: #79addc;
+  background: #f2f7a1;
+  border-radius: 2%;
 }
 
 .btn-cart {
@@ -44,7 +45,7 @@
 
 .delete-btn {
   color: #1f3d47;
-  background-color: #f2f7a1;
+  background-color: #79addc;
   border-radius: 5px;
   text-transform: capitalize;
   border: none;
@@ -56,7 +57,7 @@
 
 .add-btn {
   color: #1f3d47;
-  background-color: #f2f7a1;
+  background-color: #79addc;
   border-radius: 5px;
   text-transform: capitalize;
   border: none;

@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function CheckOut() {
   const [firstname, setFirstname] = useState("");
@@ -19,11 +21,11 @@ function CheckOut() {
       !address ||
       !housenumber
     ) {
-      alert("You need to enter full information");
+      toast.error("You need to enter full information");
     } else if (!swish && !credit) {
-      alert("You need to choose one payment method");
+      toast.error("You need to choose one payment method");
     } else {
-      alert(
+      toast.success(
         `Thank you for your order ${firstname} ${lastname} you payed with ${
           swish ? "Swish" : "Credit Card"
         }`
@@ -34,6 +36,7 @@ function CheckOut() {
 
   return (
     <div>
+      <ToastContainer />
       <div className="checkout-title">
         <h1>Payment</h1>
       </div>

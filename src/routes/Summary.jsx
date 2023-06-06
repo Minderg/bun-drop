@@ -35,7 +35,6 @@ function Summary() {
         <div className="card-summary" key={item.id}>
           <p>~ {item.name}</p>
           <p>~ {item.quantity} st</p>
-          <p>~ {item.totalprice}$</p>
         </div>
       ))}
       <div className="footer-container">

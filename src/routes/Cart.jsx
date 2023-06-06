@@ -55,9 +55,9 @@ function Cart() {
           <span>|</span>
           <p>{item.price}$</p>
           <span>|</span>
-          <p>{item.totalprice}$</p>
+          <em>{item.quantity}st</em>
           <span>|</span>
-          <em>{item.quantity}</em>
+          <p>{item.totalprice}$</p>
           <button
             className="delete-btn"
             onClick={() => decreaseQuantity(item.id)}

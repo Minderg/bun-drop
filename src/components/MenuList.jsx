@@ -29,6 +29,7 @@ function MenuList() {
         image: itemMenu.image,
         description: itemMenu.description,
         quantity: 1,
+        totalprice: itemMenu.price,
       };
       // letar efter cart i localstorage, om det inte finns så skapas en tom array
       let cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -38,6 +39,7 @@ function MenuList() {
       // Kollar om produkten redan finns i carten och plusar på 1, annars så lägger den till den
       if (index !== -1) {
         cart[index].quantity++;
+        cart[index].totalprice = cart[index].quantity * cart[index].price;
       } else {
         // lägger till item i cart
         cart.push(item);
@@ -46,7 +48,10 @@ function MenuList() {
       // Samt uppdaterar quantity i cart hela tiden
       const updateCart = menu.map((item) => {
         if (index.id === id) {
-          return { ...item, quantity: item.quantity + 1 };
+          return {
+            ...item,
+            quantity: item.quantity + 1,
+          };
         }
         return item;
       });
