@@ -7,7 +7,7 @@
       "description": "A juicy beef patty topped with lettuce, tomato, onion, and pickles on a sesame seed bun.",
       "price": 8.99,
       "image": "burger-1.png",
-      "totalprice":
+      "totalprice": ""
     },
     {
       "id": 2,
@@ -16,7 +16,7 @@
       "description": "The classic burger with an added slice of cheddar cheese for extra flavor.",
       "price": 6.99,
       "image": "burger-9.png",
-      "totalprice":
+      "totalprice": ""
     },
     {
       "id": 3,
@@ -25,7 +25,7 @@
       "description": "A delicious burger topped with crispy bacon, lettuce, tomato, and mayo.",
       "price": 10.99,
       "image": "burger-8.png",
-      "totalprice":
+      "totalprice": ""
     },
     {
       "id": 4,
@@ -34,7 +34,7 @@
       "description": "A savory burger topped with sautéed mushrooms and melted Swiss cheese.",
       "price": 11.99,
       "image": "burger-2.png",
-      "totalprice":
+      "totalprice": ""
     },
     {
       "id": 5,
@@ -43,7 +43,7 @@
       "description": "A smoky barbecue burger with tangy barbecue sauce, crispy onion rings, and pickles.",
       "price": 14.99,
       "image": "burger-4.png",
-      "totalprice":
+      "totalprice": ""
     },
     {
       "id": 6,
@@ -52,7 +52,7 @@
       "description": "A fiery burger topped with sliced jalapenos, pepper jack cheese, and chipotle mayo.",
       "price": 9.99,
       "image": "burger-3.png",
-      "totalprice":
+      "totalprice": ""
     },
     {
       "id": 7,
@@ -61,7 +61,7 @@
       "description": "A healthier option with a turkey patty, sliced avocado, lettuce, and tomato.",
       "price": 16.99,
       "image": "burger-5.png",
-      "totalprice":
+      "totalprice": ""
     },
     {
       "id": 8,
@@ -70,7 +70,7 @@
       "description": "A vegetarian delight with a plant-based patty, lettuce, tomato, and special sauce.(Not really a veggi burger)",
       "price": 18.99,
       "image": "burger-6.png",
-      "totalprice":
+      "totalprice": ""
     },
     {
       "id": 9,
@@ -79,7 +79,7 @@
       "description": "A hearty burger with two beef patties, double bacon, and melted cheese.",
       "price": 20.99,
       "image": "burger-7.png",
-      "totalprice":
+      "totalprice": ""
     },
     {
       "id": 10,
@@ -88,7 +88,7 @@
       "description": "Crispy golden fries seasoned with salt and pepper.",
       "price": 2.99,
       "image": "fries-1.png",
-      "totalprice":
+      "totalprice": ""
     },
     {
       "id": 11,
@@ -97,7 +97,7 @@
       "description": "Crispy sweet potato fries seasoned with salt, pepper and chili.",
       "price": 3.99,
       "image": "fries-2.png",
-      "totalprice":
+      "totalprice": ""
     },
     {
       "id": 12,
@@ -106,7 +106,7 @@
       "description": "Crispy & Creamy Chili Cheese",
       "price": 2.99,
       "image": "chiili-cheese.png",
-      "totalprice":
+      "totalprice": ""
     },
     {
       "id": 13,
@@ -115,7 +115,7 @@
       "description": "Crispy & Spicy Hot Wings",
       "price": 3.99,
       "image": "hot-wings.png",
-      "totalprice":
+      "totalprice": ""
     },
     {
       "id": 14,
@@ -124,7 +124,7 @@
       "description": "A creamy milkshake made with chocolate",
       "price": 4.99,
       "image": "milkshake-1.png",
-      "totalprice":
+      "totalprice": ""
     },
     {
       "id": 15,
@@ -133,7 +133,7 @@
       "description": "A creamy milkshake made with strawberry ice cream.",
       "price": 4.99,
       "image": "milkshake-2.png",
-      "totalprice":
+      "totalprice": ""
     },
     {
       "id": 16,
@@ -142,7 +142,7 @@
       "description": "Pale Ale Beer named after Frida",
       "price": 5.99,
       "image": "soda-1.png",
-      "totalprice":
+      "totalprice": ""
     },
     {
       "id": 17,
@@ -151,7 +151,7 @@
       "description": "A healthy sparkling tonic",
       "price": 2.99,
       "image": "soda-2.png",
-      "totalprice":
+      "totalprice": ""
     },
     {
       "id": 18,
@@ -160,7 +160,7 @@
       "description": "A healthy sparkling water from China best waterfalls",
       "price": 1.99,
       "image": "soda-3.png",
-      "totalprice":
+      "totalprice": ""
     },
     {
       "id": 19,
@@ -169,7 +169,7 @@
       "description": "Straight from the coconut",
       "price": 6.99,
       "image": "soda-4.png",
-      "totalprice":
+      "totalprice": ""
     }
   ]
 }

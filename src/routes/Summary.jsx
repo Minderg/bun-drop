@@ -4,7 +4,7 @@ import { AiOutlineLinkedin } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 function Summary() {
-  const [randomTime, setRandomTime] = useState(null);
+  const [randomTime, setRandomTime] = useState(0);
   const [cartItems, setCartItems] = useState([]);
 
   useEffect(() => {
