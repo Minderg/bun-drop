@@ -10,6 +10,7 @@ function Summary() {
   useEffect(() => {
     const storedCartItems = JSON.parse(localStorage.getItem("cart")) || [];
     setCartItems(storedCartItems);
+    localStorage.clear();
   }, []);
 
   useEffect(() => {
@@ -31,6 +32,7 @@ function Summary() {
       {randomTime !== null && (
         <h2>Your order will arive in {randomTime} min</h2>
       )}
+
       {cartItems.map((item) => (
         <div className="card-summary" key={item.id}>
           <p>~ {item.name}</p>
