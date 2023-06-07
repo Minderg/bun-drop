@@ -48,12 +48,12 @@ function Cart() {
     localStorage.setItem("cart", JSON.stringify(updatedCart));
   }
 
-  function calculateTotalPrice() {
+  function calculateTotalCartPrice() {
     return cartItems.reduce((total, item) => total + item.totalprice, 0);
   }
 
   useEffect(() => {
-    setTotalPrice(calculateTotalPrice());
+    setTotalPrice(calculateTotalCartPrice());
   }, [cartItems]);
 
   return (
