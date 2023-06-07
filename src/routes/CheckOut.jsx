@@ -11,35 +11,13 @@ function CheckOut() {
   const [city, setCity] = useState("");
   const [address, setAddress] = useState("");
   const [housenumber, setHousenumber] = useState("");
-  const [isCheckSwish, setIsCheckSwish] = useState(false);
-  const [inputValueSwish, setInputValueSwish] = useState("");
-  const [isCheckCredit, setIsCheckCredit] = useState(false);
-  const [inputValueCredit, setInputValueCredit] = useState("");
+  const [phonenumber, setPhonenumber] = useState("");
+  const [creditCardNumber, setCreditCardNumber] = useState("");
   const [cvc, setCvc] = useState("");
   const [startDate, setStartDate] = useState(new Date());
 
   const date = (date) => {
     setStartDate(date);
-  };
-
-  const handleCheckBoxCredit = () => {
-    setIsCheckCredit(!isCheckCredit);
-  };
-
-  const handleValueCredit = (e) => {
-    setInputValueCredit(e.target.value);
-  };
-
-  const handleValueCvc = (e) => {
-    setCvc(e.target.value);
-  };
-
-  const handleCheckBoxSwish = () => {
-    setIsCheckSwish(!isCheckSwish);
-  };
-
-  const handleValueSwish = (e) => {
-    setInputValueSwish(e.target.value);
   };
 
   const validateInfo = () => {
@@ -52,14 +30,23 @@ function CheckOut() {
       !housenumber
     ) {
       toast.error("You need to enter full information");
-    } else if (!isCheckSwish && !isCheckCredit) {
-      toast.error("You need to choose one payment method");
-    } else if (isCheckSwish && !inputValueSwish) {
-      toast.error("You need to enter phone number");
-    } else if (isCheckCredit && !inputValueCredit && !cvc) {
-      toast.error("You need to enter credit card number");
-    } else {
+    } else if (phonenumber.length === 9) {
       window.location.href = "/summary";
+    } else if (creditCardNumber.length === 15 && cvc.length === 3) {
+      window.location.href = "/summary";
+    } else {
+      if (!phonenumber.length > 9) {
+        toast.error("You need to enter correct phone number");
+      }
+      if (
+        !(
+          creditCardNumber.length > 15 &&
+          !cvc.length > 2 &&
+          !phonenumber.length > 9
+        )
+      ) {
+        toast.error("You need to enter correct payment information");
+      }
     }
   };
 
@@ -108,61 +95,47 @@ function CheckOut() {
         />
       </div>
       <div className="payment-container">
-        <div className="checkbox-swish">
+        <div className="input-swish">
           <img src="/assets/swish.png" className="swish" />
           <label>
             <input
-              type="checkbox"
-              value="swish"
-              checked={isCheckSwish}
-              onChange={handleCheckBoxSwish}
+              className="input-phonenumber"
+              type="text"
+              placeholder="Phonenumber"
+              onChange={(e) => setPhonenumber(e.target.value)}
+              value={phonenumber}
             />
           </label>
-
-          {isCheckSwish && (
-            <input
-              type="text"
-              value={inputValueSwish}
-              onChange={handleValueSwish}
-              placeholder="Phone number"
-            />
-          )}
         </div>
-        <div className="checkbox-credit">
+        <div className="input-credit">
           <img src="/assets/credit-card.png" className="credit-card" />
           <label>
             <input
-              type="checkbox"
-              value="credit"
-              checked={isCheckCredit}
-              onChange={handleCheckBoxCredit}
+              className="input-credit-card"
+              type="text"
+              placeholder="Credit Card Number"
+              onChange={(e) => setCreditCardNumber(e.target.value)}
+              value={creditCardNumber}
             />
           </label>
-          {isCheckCredit && (
+          <label>
             <input
+              className="input-credit-card"
               type="text"
-              value={inputValueCredit}
-              onChange={handleValueCredit}
-              placeholder="Credit card number"
-            />
-          )}
-
-          {isCheckCredit && (
-            <input
-              type="text"
+              placeholder="CVC"
+              onChange={(e) => setCvc(e.target.value)}
               value={cvc}
-              onChange={handleValueCvc}
-              placeholder="Cvc"
             />
-          )}
-          {isCheckCredit && (
+          </label>
+          <label>
             <DatePicker
+              className="input-credit-card"
               selected={startDate}
               onChange={date}
               dateFormat="dd/MM/yyyy"
               placeholderText="Expiration date"
             />
-          )}
+          </label>
         </div>
       </div>
       <div className="pay">
