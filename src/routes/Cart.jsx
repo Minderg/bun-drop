@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 
 function Cart() {
   const [cartItems, setCartItems] = useState([]);
+  const [totalPrice, setTotalPrice] = useState(0);
 
   useEffect(() => {
     const storedCartItems = JSON.parse(localStorage.getItem("cart")) || [];
@@ -47,6 +48,14 @@ function Cart() {
     localStorage.setItem("cart", JSON.stringify(updatedCart));
   }
 
+  function calculateTotalPrice() {
+    return cartItems.reduce((total, item) => total + item.totalprice, 0);
+  }
+
+  useEffect(() => {
+    setTotalPrice(calculateTotalPrice());
+  }, [cartItems]);
+
   return (
     <div className="cart-container">
       {cartItems.map((item) => (
@@ -74,6 +83,9 @@ function Cart() {
           />
         </div>
       ))}
+      <div className="totalprice">
+        <h2>TotalPrice: {totalPrice}$</h2>
+      </div>
       <Link to="/checkout">
         <button className="btn-cart">Checkout</button>
       </Link>

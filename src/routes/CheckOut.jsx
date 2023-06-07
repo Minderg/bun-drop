@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 function CheckOut() {
   const [firstname, setFirstname] = useState("");
@@ -9,8 +11,36 @@ function CheckOut() {
   const [city, setCity] = useState("");
   const [address, setAddress] = useState("");
   const [housenumber, setHousenumber] = useState("");
-  const [swish, setSwish] = useState("");
-  const [credit, setCredit] = useState("");
+  const [isCheckSwish, setIsCheckSwish] = useState(false);
+  const [inputValueSwish, setInputValueSwish] = useState("");
+  const [isCheckCredit, setIsCheckCredit] = useState(false);
+  const [inputValueCredit, setInputValueCredit] = useState("");
+  const [cvc, setCvc] = useState("");
+  const [startDate, setStartDate] = useState(new Date());
+
+  const date = (date) => {
+    setStartDate(date);
+  };
+
+  const handleCheckBoxCredit = () => {
+    setIsCheckCredit(!isCheckCredit);
+  };
+
+  const handleValueCredit = (e) => {
+    setInputValueCredit(e.target.value);
+  };
+
+  const handleValueCvc = (e) => {
+    setCvc(e.target.value);
+  };
+
+  const handleCheckBoxSwish = () => {
+    setIsCheckSwish(!isCheckSwish);
+  };
+
+  const handleValueSwish = (e) => {
+    setInputValueSwish(e.target.value);
+  };
 
   const validateInfo = () => {
     if (
@@ -22,14 +52,13 @@ function CheckOut() {
       !housenumber
     ) {
       toast.error("You need to enter full information");
-    } else if (!swish && !credit) {
+    } else if (!isCheckSwish && !isCheckCredit) {
       toast.error("You need to choose one payment method");
+    } else if (isCheckSwish && !inputValueSwish) {
+      toast.error("You need to enter phone number");
+    } else if (isCheckCredit && !inputValueCredit && !cvc) {
+      toast.error("You need to enter credit card number");
     } else {
-      toast.success(
-        `Thank you for your order ${firstname} ${lastname} you payed with ${
-          swish ? "Swish" : "Credit Card"
-        }`
-      );
       window.location.href = "/summary";
     }
   };
@@ -79,22 +108,62 @@ function CheckOut() {
         />
       </div>
       <div className="payment-container">
-        <img src="/assets/swish.png" className="swish" />
-        <input
-          type="checkbox"
-          className="checkbox-swish"
-          value="swish"
-          checked={swish}
-          onChange={(e) => setSwish(e.target.checked)}
-        />
-        <img src="/assets/credit-card.png" className="credit-card" />
-        <input
-          type="checkbox"
-          className="checkbox-credit"
-          value="credit"
-          checked={credit}
-          onChange={(e) => setCredit(e.target.checked)}
-        />
+        <div className="checkbox-swish">
+          <img src="/assets/swish.png" className="swish" />
+          <label>
+            <input
+              type="checkbox"
+              value="swish"
+              checked={isCheckSwish}
+              onChange={handleCheckBoxSwish}
+            />
+          </label>
+
+          {isCheckSwish && (
+            <input
+              type="text"
+              value={inputValueSwish}
+              onChange={handleValueSwish}
+              placeholder="Phone number"
+            />
+          )}
+        </div>
+        <div className="checkbox-credit">
+          <img src="/assets/credit-card.png" className="credit-card" />
+          <label>
+            <input
+              type="checkbox"
+              value="credit"
+              checked={isCheckCredit}
+              onChange={handleCheckBoxCredit}
+            />
+          </label>
+          {isCheckCredit && (
+            <input
+              type="text"
+              value={inputValueCredit}
+              onChange={handleValueCredit}
+              placeholder="Credit card number"
+            />
+          )}
+
+          {isCheckCredit && (
+            <input
+              type="text"
+              value={cvc}
+              onChange={handleValueCvc}
+              placeholder="Cvc"
+            />
+          )}
+          {isCheckCredit && (
+            <DatePicker
+              selected={startDate}
+              onChange={date}
+              dateFormat="dd/MM/yyyy"
+              placeholderText="Expiration date"
+            />
+          )}
+        </div>
       </div>
       <div className="pay">
         <button onClick={validateInfo} className="btn-pay-style">
