@@ -30,23 +30,19 @@ function CheckOut() {
       !housenumber
     ) {
       toast.error("You need to enter full information");
-    } else if (phonenumber.length === 9) {
-      window.location.href = "/summary";
-    } else if (creditCardNumber.length === 15 && cvc.length === 3) {
-      window.location.href = "/summary";
+    } else if (!phonenumber && !creditCardNumber && !cvc) {
+      toast.error("You need to choose a payment method");
+    } else if (phonenumber && phonenumber.length !== 10) {
+      toast.error("Phonenumber need to be 10 digits!");
+    } else if (
+      (creditCardNumber && creditCardNumber.length !== 16) ||
+      (!creditCardNumber && cvc) ||
+      (creditCardNumber && !cvc) ||
+      (cvc && cvc.length !== 3)
+    ) {
+      toast.error("Credit card number need to be 16 digits and CVC 3 digits!");
     } else {
-      if (!phonenumber.length > 9) {
-        toast.error("You need to enter correct phone number");
-      }
-      if (
-        !(
-          creditCardNumber.length > 15 &&
-          !cvc.length > 2 &&
-          !phonenumber.length > 9
-        )
-      ) {
-        toast.error("You need to enter correct payment information");
-      }
+      window.location.href = "/summary";
     }
   };
 
